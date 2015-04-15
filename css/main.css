@@ -1,37 +1,86 @@
 /* MAIN CSS */
 body {
 	font-family:"Helvetica Regular";
+	font-size:15px;
 	color:#232323;
 }
 
-body * {
-	-webkit-box-sizing: border-box;
-		 -moz-box-sizing: border-box;
-			  box-sizing: border-box;
-}
-
 /* GENERAL */
-	.main {
+	.b-main {
 		width:100%;
 		margin:0 auto;
 		overflow:hidden;
 	}
 	
-	.main__center {
+	.b-main__center {
 		max-width:960px;
 		margin:0 auto;
 	}
 
-	.clear {
+	.b-clear {
 		float:none;
 		clear:both;
 	}
 	
-	.font-reg { font-family:"Helvetica Regular"; font-weight:normal }
-	.font-bold { font-family:"Helvetica Bold"; font-weight:normal }
-	.font-italic { font-family:"Helvetica Italic"; font-weight:normal }
-	.font-light { font-family:"Helvetica Light"; font-weight:normal }
-	.font-medium { font-family:"Helvetica Medium"; font-weight:normal }
-	.font-thin { font-family:"Helvetica Thin"; font-weight:normal }
+	.b-font-reg { font-family:"Helvetica Regular"; font-weight:normal }
+	b, strong, .b-font-bold { font-family:"Helvetica Bold"; font-weight:normal }
+	i, .b-font-italic { font-family:"Helvetica Italic"; font-weight:normal }
+	.b-font-light { font-family:"Helvetica Light"; font-weight:normal }
+	.b-font-medium { font-family:"Helvetica Medium"; font-weight:normal }
+	.b-font-thin { font-family:"Helvetica Thin"; font-weight:normal }
+	
+	.b-btn-feedback {
+		display:inline-block;
+		padding:6px 19px;
+		border:1px solid #000;
+		border-radius:3px;
+		color:#000;
+		text-decoration:none;
+	}
 	
 /* --END-- GENERAL */
+
+/* HEADER */
+	.b-header {
+		width:100%;
+		line-height:19px;
+		background:#fecf0e;
+		padding:15px 0;
+		font-size:14px;
+		position:fixed;
+	}
+	
+	.b-header__logo {
+		display:block;
+		float:left;
+	}
+	
+	.b-header__shop-link {
+		padding:0 0 0 30px;
+		margin:0 0 0 45px;
+		background:url("../images/shop-link-arrow.png") left center no-repeat;
+		color:#000;
+		text-decoration:none;
+		display:block;
+		float:left;
+	}
+	
+	.b-header__address-link {
+		padding:0 0 0 33px;
+		margin:0 0 0 33px;
+		background:url("../images/address-link-icon.png") left center no-repeat;
+		color:#000;
+		text-decoration:none;
+		display:block;
+		float:left;
+	}
+	
+	.b-header__phones {
+		float:left;
+		margin:0 0 0 31px;
+	}
+	
+	.b-header__btn-feedback {
+		float:right;
+	}
+/* --END-- HEADER */
